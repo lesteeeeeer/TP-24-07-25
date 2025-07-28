@@ -89,10 +89,11 @@ $livres = $livreModel->getAll();
                 <tr>
                     <th>ID</th>
                     <th>Titre</th>
-                    <th>Auteur</th>
                     <th>Date de publication</th>
                     <th>Disponible</th>
+                    <th>Auteur</th>
                     <th>Actions</th>
+
                 </tr>
             </thead>
             <tbody>

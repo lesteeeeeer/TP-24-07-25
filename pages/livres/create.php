@@ -11,7 +11,8 @@ $auteurs = $auteurModel->getAll();
 // Traitement du formulaire
 if ($_POST) {
     $titre = $_POST['titre'] ?? '';
-    $isbn = $_POST['isbn'] ?? '';
+    // $isbn = $_POST['isbn'] ?? '';
+    // j'enlève cette partie car l'utilisateur n'a pas besoins de rentrer un ISBN
     $date_publication = $_POST['date_publication'] ?? '';
     $nb_pages = $_POST['nb_pages'] ?? '';
     $nb_exemplaires = $_POST['nb_exemplaires'] ?? '';
@@ -111,8 +112,10 @@ if ($_POST) {
         <label for="titre">Titre *</label>
         <input type="text" name="titre" id="titre" required>
 
-        <label for="isbn">ISBN *</label>
-        <input type="text" name="isbn" id="isbn" required>
+        <!-- <label for="isbn">ISBN *</label>
+        <input type="text" name="isbn" id="isbn" required> -->
+
+        <!-- j'enlève cette partie car l'utilisateur n'a pas besoins de rentrerun ISBN -->
 
         <label for="date_publication">Date de publication *</label>
         <input type="date" name="date_publication" id="date_publication" required>
