@@ -109,28 +109,31 @@ if ($_POST) {
     <h1>Ajouter un livre</h1>
 
     <form method="POST">
-        <label for="titre">Titre *</label>
+        <label for="titre">Titre</label>
         <input type="text" name="titre" id="titre" required>
+
+        <label for="auteur_nom">Auteur</label>
+        <input type="text" name="auteur_nom" id="auteur_nom" required>
 
         <!-- <label for="isbn">ISBN *</label>
         <input type="text" name="isbn" id="isbn" required> -->
 
         <!-- j'enlève cette partie car l'utilisateur n'a pas besoins de rentrerun ISBN -->
 
-        <label for="date_publication">Date de publication *</label>
+        <label for="date_publication">Date de publication</label>
         <input type="date" name="date_publication" id="date_publication" required>
 
-        <label for="nb_pages">Nombre de pages *</label>
+        <label for="nb_pages">Nombre de pages</label>
         <input type="number" name="nb_pages" id="nb_pages" required>
 
-        <label for="nb_exemplaires">Nombre d'exemplaires *</label>
+        <label for="nb_exemplaires">Nombre d'exemplaires</label>
         <input type="number" name="nb_exemplaires" id="nb_exemplaires" required>
 
         <label for="disponible">
             <input type="checkbox" name="disponible" id="disponible"> Disponible
         </label>
 
-        <label for="resume">Résumé *</label>
+        <label for="resume">Résumé</label>
         <input type="text" name="resume" id="resume" required>
 
         <input type="submit" value="Ajouter">

@@ -103,7 +103,7 @@ $livres = $livreModel->getAll();
                         <td><?= htmlspecialchars($livre['titre']) ?></td>
                         <td><?= htmlspecialchars($livre['date_publication']) ?></td>
                         <td><?= htmlspecialchars($livre['disponible']) ?></td>
-                        <td><?= htmlspecialchars($livre['auteur_nom']) ?></td>
+                        <td><?= htmlspecialchars($livre['auteur_nom'] ?? '') ?></td>
                         <td>
                             <a class="delete-btn" href="pages/livres/delete.php?id=<?= $livre['id_livre']; ?>" onclick="return confirm('Voulez-vous vraiment supprimer ce livre ?');">Supprimer</a>
                         </td>
